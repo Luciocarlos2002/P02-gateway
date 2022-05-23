@@ -19,3 +19,27 @@ spring:
           uri: lb://MICROSERVICE-CUSTOMER
           predicates:
             - Path=/ms-customer/***
+        - id: msAccount
+          uri: lb://MICROSERVICE-ACCOUNT
+          predicates:
+            - Path=/ms-account/***
+        - id: msCredit
+          uri: lb://MICROSERVICE-CREDIT
+          predicates:
+            - Path=/ms-credit/***
+        - id: msMovementDebit
+          uri: lb://MICROSERVICE-MOVEMENT-DEBIT
+          predicates:
+            - Path=/ms-movementDebit/***
+        - id: msMovementCredit
+          uri: lb://MICROSERVICE-MOVEMENT-CREDIT
+          predicates:
+            - Path=/ms-movementCredit/***
+        - id: msTransferer
+          uri: lb://MICROSERVICE-TRANSFERER
+          predicates:
+            - Path=/ms-transferer/***
+        - id: msPaymentService
+          uri: lb://MICROSERVICE-PAYMENT-SERVICE
+          predicates:
+            - Path=/ms-paymentService/***
